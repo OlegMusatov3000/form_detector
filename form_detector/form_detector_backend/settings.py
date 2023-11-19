@@ -120,3 +120,23 @@ ALL_TEMPLATES = [
     ('WithoutEmailAndText', {'f_name1': 'phone', 'f_name2': 'date'}),
     ('OnlyText', {'only_one_text': 'text'}),
 ]
+
+MAIN_URL = 'http://localhost:8000/get_form'
+
+TEST_PARAMS_1 = {
+    'date': '01.01.1970',
+    'phone': '+78005553535',
+    'email': 'ascaac@mail.ru',
+    'text': 1123
+}
+TEST_PARAMS_2 = {
+    'only_one_text': 'test text',
+    'my_phone': '+78005553535',
+    'text': 'test text',
+    'my_email': 'asdsa.ascaac@mail.ru',
+    'again text': 1123
+}
+TEST_PARAMS_3 = {
+    'f_name3': "dsvsdvsdvs",
+    'f_name9': '12.12.1912'
+}
